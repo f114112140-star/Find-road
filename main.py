@@ -51,7 +51,7 @@ while q:
                 q.append((ny, nx))
 
 # 後處理
-kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
 mask_roi = cv2.morphologyEx(mask_roi, cv2.MORPH_CLOSE, kernel, iterations=2)
 
 mask = np.zeros((h, w), dtype=np.uint8)
