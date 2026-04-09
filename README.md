@@ -37,3 +37,12 @@ kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
 mask_roi = cv2.morphologyEx(mask_roi, cv2.MORPH_CLOSE, kernel, iterations=2)
 ```
 ## 成果展示
+後處理kernel變化
+```python
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (7, 7))
+```
+<img width="803" height="605" alt="image" src="https://github.com/user-attachments/assets/b17e1bae-c802-4709-b64b-d0a93d0238d8" />
+```python
+kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (15, 15))
+```
+<img width="798" height="601" alt="image" src="https://github.com/user-attachments/assets/9b1215b8-cf53-4499-8f56-04d55026cc3c" />
